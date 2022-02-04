@@ -34,5 +34,13 @@ if __name__ == '__main__':
     # Darle color a la línea a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()      # Definir tamaño figura
+    ax = fig.add_subplot()  # Definir cuantos gráficos tendrá
 
+    ax.plot(x, y, c='red', label='Grafico')           # Graficar con plot en mi gráfico "ax"
+    ax.set_facecolor('whitesmoke')
+    ax.set_title("Ejercicio 1")
+    ax.set_ylabel("Label Y")
+    ax.set_xlabel("Label X")
+    plt.show()              # Mostrar el gráfico
     print("terminamos")

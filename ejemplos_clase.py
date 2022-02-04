@@ -23,6 +23,7 @@ def line_plot():
     poblacion = [1650, 3692, 5263, 6070, 7800]
 
     # Realizaremos un gráfico "plot" con:
+
     # years como "x"
     # poblacion como "y"
     fig = plt.figure()
@@ -34,6 +35,9 @@ def line_plot():
     ax.grid()
     plt.show()
     print("Fin line plot")
+
+
+
 
 
 def multi_line_plot():
