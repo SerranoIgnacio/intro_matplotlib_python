@@ -8,6 +8,9 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios de matplotlib
+from cProfile import label
+from re import X
+from tkinter import Y
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -34,4 +37,11 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Función tanh', fontsize=16)
+    ax1 = fig.add_subplot(1, 2, 1)  # 1 fila, 2 columnas, axes nº1
+    ax1.scatter(x, y, c='blue', label='tanh')
+    ax1.legend()
+    ax1.grid()
+    plt.show()
     print("terminamos")
